@@ -33,9 +33,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   sourish_dbt_snowflake:
-    # Applies to all files under models/example/
-    example:
-      schema: example
     staging:
       schema: staging
       materialized: view
